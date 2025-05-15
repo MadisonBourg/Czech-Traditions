@@ -15,21 +15,46 @@
     }
 
     header {
-      background-color: #fceeee;
-      padding: 50px 20px;
+      background: radial-gradient(#fff9f0, #fceeee);
+      padding: 50px 20px 40px;
       text-align: center;
       color: #8b3a3a;
+      position: relative;
+      overflow: hidden;
     }
 
     header h1 {
       font-family: 'Great Vibes', cursive;
       font-size: 3.5em;
       margin-bottom: 10px;
+      position: relative;
+      display: inline-block;
+      z-index: 2;
     }
 
-    header p {
-      font-size: 1.3em;
-      color: #a64b4b;
+    .mistletoe {
+      width: 60px;
+      position: absolute;
+      top: 30px;
+    }
+
+    .mistletoe.left {
+      left: 20px;
+    }
+
+    .mistletoe.right {
+      right: 20px;
+      transform: scaleX(-1);
+    }
+
+    .dots {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle, #e6c674 1px, transparent 1px);
+      background-size: 20px 20px;
+      opacity: 0.2;
+      z-index: 0;
     }
 
     section {
@@ -41,8 +66,9 @@
     h2 {
       font-family: 'Great Vibes', cursive;
       color: #b8860b;
-      font-size: 2.5em;
+      font-size: 2.3em;
       margin-bottom: 10px;
+      text-align: center;
     }
 
     .highlight {
@@ -78,13 +104,20 @@
       font-size: 1.3em;
     }
 
+    hr {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, #e6be8a, #f0dac2, #e6be8a);
+      margin: 40px 0;
+    }
+
     footer {
       text-align: center;
       padding: 30px 20px;
       background-color: #fceeee;
       font-size: 0.9em;
       color: #a64b4b;
-      margin-top: 60px;
+      border-top: 1px solid #f4d7b8;
     }
 
     @media (max-width: 600px) {
@@ -95,66 +128,64 @@
       h2 {
         font-size: 2em;
       }
+
+      .mistletoe {
+        width: 40px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
+    <div class="dots"></div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Mistletoe_icon.svg" class="mistletoe left" alt="Mistletoe left">
     <h1>Vánočka</h1>
-    <p>A Beloved Czech Christmas Bread</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Mistletoe_icon.svg" class="mistletoe right" alt="Mistletoe right">
   </header>
 
   <section>
-    <h2>What Makes Vánočka Special</h2>
+    <h2>A Czech Christmas Delight</h2>
+    <p>Vánočka is a sweet, braided bread traditionally baked during Christmas in the Czech Republic. For many families, it's more than just food — it's the aroma of memories, joy, and togetherness. This beautiful golden loaf represents warmth, tradition, and celebration.</p>
+
     <div class="highlight">
-      <p>
-        Vánočka is more than just bread—it’s a tradition steeped in love and memory. For me, it represents the warmth of winter holidays, the closeness of family and friends, and the joy of cherished moments. My grandmother makes Vánočka every Christmas, and it has become a comforting centerpiece of our celebrations.
-      </p>
+      <p>“My grandmother makes Vánočka every Christmas. It’s the smell of winter mornings, the comfort of tradition, and the taste of shared joy.”</p>
     </div>
 
-   <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Vanocka_czech_sweet_bread.jpg" alt="Vánočka Bread">
-
-
-    <h2>The Taste of Tradition</h2>
-    <p>
-      Slightly sweet, with a soft, tender center and a beautifully golden braided crust, Vánočka is delicious and visually inviting. Whether made plain or with dried fruits and almonds, it offers a customizable experience perfect for sharing with large groups.
-    </p>
-
-    <h2>A Bread That Tells a Story</h2>
-    <p>
-      Every slice of Vánočka carries the story of holidays past: the laughter in the kitchen, the scent of baking bread, and the sparkle of snow outside. It’s not just food—it’s a feeling. And that feeling is what I treasure most.
-    </p>
+    <img src="vanocka.jpg" alt="Freshly baked Vanocka loaf">
+    <img src="vanocka1.jpg" alt="Sliced Vanocka with raisins on a plate">
 
     <div class="recipe">
-      <h2>Vánočka Recipe</h2>
-      <h3>Ingredients</h3>
+      <h3>Recipe Ingredients:</h3>
       <ul>
         <li>4 cups all-purpose flour</li>
-        <li>1 packet dry yeast</li>
-        <li>1/2 cup sugar</li>
-        <li>2/3 cup warm milk</li>
-        <li>2 eggs + 1 egg for brushing</li>
-        <li>1/2 cup butter, melted</li>
+        <li>½ cup sugar</li>
+        <li>½ cup softened butter</li>
+        <li>2 egg yolks</li>
+        <li>1 egg for egg wash</li>
+        <li>¾ cup lukewarm milk</li>
+        <li>2 tbsp fresh yeast or 7g dry yeast</li>
+        <li>1 tsp salt</li>
         <li>1 tsp vanilla extract</li>
-        <li>1/2 tsp salt</li>
-        <li>Optional: raisins, chopped almonds, lemon zest</li>
+        <li>Zest of 1 lemon</li>
+        <li>⅔ cup raisins (optional)</li>
+        <li>¼ cup shaved almonds (optional)</li>
+        <li>Powdered sugar for dusting</li>
       </ul>
 
-      <h3>Instructions</h3>
+      <h3>Instructions:</h3>
       <ol>
-        <li>Activate yeast in warm milk with a bit of sugar. Let sit for 10 mins.</li>
-        <li>Mix flour, sugar, salt, eggs, butter, vanilla, and yeast mixture until a soft dough forms.</li>
-        <li>Knead for 10 minutes. Cover and let rise in a warm place for 1–2 hours.</li>
-        <li>Divide into strands and braid. Optional: add raisins or almonds between layers.</li>
-        <li>Place on a baking sheet, let rise again for 30–45 minutes.</li>
-        <li>Brush with beaten egg and bake at 350°F (175°C) for 35–40 minutes until golden brown.</li>
-        <li>Cool slightly, dust with powdered sugar, and enjoy!</li>
+        <li>Activate yeast in warm milk with a bit of sugar.</li>
+        <li>Mix flour, sugar, salt, zest, vanilla, and add in yeast, yolks, butter. Knead well.</li>
+        <li>Let dough rise until doubled (1–1.5 hrs).</li>
+        <li>Braid into layers, stack, and let rise again.</li>
+        <li>Brush with egg, sprinkle almonds. Bake at 350°F (180°C) for 35–40 mins.</li>
+        <li>Cool and dust with powdered sugar before serving.</li>
       </ol>
     </div>
   </section>
 
   <footer>
-    Made with love to celebrate tradition, family, and the joy of Christmas.
+    Made with love to celebrate tradition. &copy; 2025 Vánočka Memories
   </footer>
 </body>
 </html>
